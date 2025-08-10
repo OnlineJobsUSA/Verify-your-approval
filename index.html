@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>LOGIN</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<script language="javascript" type="text/javascript">
+var userid = prompt('Enter Your Work Index Code ', '');
+
+var validUsers = {
+    '0154769801': 'https://airbnb-workers-in-africa.krampah.com/work1.html ',
+    '0154769802': 'https://airbnb-workers-in-africa.krampah.com/work2.html ',
+    '0154769803': 'https://airbnb-workers-in-africa.krampah.com/work3.html ',
+    '0154769804': 'https://airbnb-workers-in-africa.krampah.com/work4.html ',
+    '0154769805': 'https://airbnb-workers-in-africa.krampah.com/work5.html ',
+    '0154769806': 'https://airbnb-workers-in-africa.krampah.com/work6.html ',
+    '0154769807': 'https://airbnb-workers-in-africa.krampah.com/work7.html ',
+    '0154769808': 'https://airbnb-workers-in-africa.krampah.com/work8.html ',
+    '0154769809': 'https://airbnb-workers-in-africa.krampah.com/work9.html ',
+    '0154769800': 'https://airbnb-workers-in-africa.krampah.com/work10.html ',
+
+    
+    
+   
+};
+
+if (validUsers[userid]) {
+    alert('Login valid . click ok to open your account');
+    window.location.href = validUsers[userid];
+} else {
+    alert('Invalid login, contact your training agent to assist you');
+}
+</script>
+</body>
+</html>
